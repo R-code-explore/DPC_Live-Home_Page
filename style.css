@@ -618,3 +618,85 @@ a{text-decoration: none;}
         margin: 220px auto;
     }
 }
+
+/**Tarifs section**/
+
+.title_tarifs{
+    display: block;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 110px auto;
+}
+
+.tarifs_section{
+    display: block;
+    width: 80%;
+    max-width: 1160px;
+    margin: auto;
+}
+
+.tarifs{
+    display: block;
+    width: 290px;
+    max-width: 290px;
+    height: 727px;
+    background: #0166FF;
+    border-radius: 10px;
+    margin: 40px auto;
+    box-shadow: -2px 3px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.white_part_tarif{
+    height: 142px;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+}
+.white_part_tarif h3{
+    text-align: center;
+}
+
+.info_tarif_part{
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+}
+.info_tarif_part div{
+    background: white;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 10px;
+    max-height: 10px;
+    border-radius: 50%;
+    transform: translateY(50%);
+    margin-right: 10px;
+}
+
+.info_tarif_part span{
+    color: white;
+}
+
+.blue_part{
+    font-family: 'Inter' , sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0166FF;
+}
+
+.tarif_02{
+    z-index: 4;
+}
+.tarif_03{
+    z-index: 3;
+}
+
+.tarif_02 > .white_part_tarif > h3{
+    color: #A2D729;
+}
+
+@media (min-width:1300px) {
+    .tarifs_section{
+        display: flex;
+    }
+}
