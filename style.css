@@ -1,0 +1,619 @@
+/***Fonts import**/
+/** Inter Medium 500 :**/@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+/** Inter Bold 700 :**/@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+body{
+    margin: 0;
+    scroll-behavior: smooth;
+    transition: .3s ease-in-out;
+}
+
+h1, h3, p, a, span{
+    font-family: 'Inter' , sans-serif;
+    color: #342E37;
+}
+
+h1, h3{font-weight: 700;}
+p, a, span{font-weight: 500; font-size: 20px;}
+a{text-decoration: none;}
+
+.sub_header{
+    width: 100%;
+    background: white;
+    height: 60px;
+    position: fixed;
+    top:0;
+    z-index: 4;
+}
+
+@media (min-width:1200px) {
+    .sub_header{
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        top:0;
+        z-index: 4;
+    }
+}
+
+.header{
+    display: flex;
+    width: 80%;
+    max-width: 1104;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    background: white;
+    position: fixed;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+/**Phone Menu settings **/
+
+.logo{
+    width: 148px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu_btn{
+    width: 25px;
+    cursor: pointer;
+}
+
+.phone_menu_list{
+    position: fixed;
+    top:0;
+    left: 0;
+    display: block;
+    background: #0167ffca;
+    width: 100%;
+    z-index: 6;
+    height: 100%;
+    padding-top: 140px;
+    transform: translateX(100%);
+    transition: .2s ease-in-out;
+}
+.phone_menu_list a{
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #FAFFFD;
+    transition: .2s ease-in-out;
+}
+.phone_menu_list a:hover{
+    transition: .2s ease-in-out;
+    color: #FA824C;
+}
+.close_menu{
+    color: white;
+    transition: .2s ease-in-out;
+    font-family: 'Inter' , sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+.close_menu:hover{
+    color: #FA824C;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px){
+    .desktop_menu{display: none;}
+}
+
+
+/**Desktop menu settings**/
+@media (min-width: 1200px){
+    .header{
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+    .logo{
+        width: 248px;
+        height: 55px;
+        cursor: pointer;
+    }
+
+    .desktop_menu{
+        display: flex;
+    }
+
+    .phone_menu, .phone_menu_list{display: none;}
+}
+
+.desktop_menu a{
+    transition: .2s ease-in-out;
+    margin-left: 50px;
+}
+
+.menu_link_desktop{transform: translateY(10px);}
+.menu_link_desktop:hover{
+    color: #FA824C;
+    transition: .2s ease-in-out;
+}
+.connexion_link{
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    line-height: 2.2em;
+    border: 2px solid #0166FF;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+.connexion_link:hover{
+    transition: .2s ease-in-out;
+    border:2px solid #FA824C;
+    color: #0166FF;
+}
+
+.inscription_link{
+    color: #FA824C;
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    line-height: 2.2em;
+    border: none;
+    border-radius: 10px;
+    background: #0166FF;
+    transition: .2s ease-in-out;
+}
+.inscription_link:hover{
+    transition: .2s ease-in-out;
+    color: #0166FF;
+}
+
+/****Banner settings**/
+@media (max-width:1200px) {
+    .banner{display: block;
+        margin: 120px auto;
+    }
+    .right_banner_content{display: none;}
+}
+
+@media (min-width:1200px){
+    .banner{
+        display: flex;
+        justify-content: space-between;
+        margin: 120px auto;
+    }
+    .right_banner_content{display: block}
+}
+
+.banner{
+    width: 80%;
+    max-width: 1104px;
+}
+
+.left_banner_content h3{
+    font-size: 50px;
+}
+@media (max-width:1200px) {
+    .left_banner_content h3{
+        font-size: 36px;
+    }
+}
+
+.banner_buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    max-width: 400px;
+}
+.banner_links{
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    line-height: 2.2em;
+    border: 2px solid #0166FF;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+.banner_links:hover{
+    transition: .2s ease-in-out;
+    color: #0166FF;
+    border: 2px solid #FA824C;
+}
+
+.banner_phone_row_div{
+    width: 100%;
+    max-width: 400px;
+}
+.banner_phone_row{
+    display: block;
+    float: right;
+    margin-top: -5px;
+}
+
+.banner_desktop_row{display: none;}
+
+@media (min-width: 1200px) {
+    .banner_phone_row, .banner_phone_row_div{display: none;}
+}
+
+.banner_desktop_row_div{
+    max-width: 800px;
+}
+
+.banner_desktop_row{
+    display: block;
+    float: right;
+    margin-right: -5px;
+    margin-top: -10px;
+}
+
+.right_banner_content{
+    display: block;
+    width: 405px;
+    height: 405px;
+    margin-top: 60px;
+}
+.right_banner_content img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:1200px) {
+    .banner_desktop_row_div{display: none;}
+    .right_banner_content{display: none;}
+}
+
+/**Fonctionnalités et services**/
+@media (max-width:1400px) {
+    .title_left{
+        display: block;
+        font-size: 50px;
+        width: 80%;
+        max-width: 1104px;
+        margin-left: 10%;
+    }
+}
+
+.title_left{
+    display: block;
+    font-size: 50px;
+    width: 80%;
+    max-width: 1104px;
+    margin:auto;
+}
+
+.title_left span{
+    font-size: 50px;
+    font-weight: 700;
+    color: #FA824C;
+}
+
+@media (max-width:1200px) {
+    .title_left{
+        font-size: 36px;
+    }
+    
+    .title_left span{
+        font-size: 36px;
+    }
+}
+
+.title_right{
+    font-size: 50px;
+    text-align: right;
+}
+
+@media (max-width: 1200px) {
+    .title_right{
+        font-size: 36px;
+    }
+}
+
+/**Partie messages & modérations**/
+
+.messages_service{
+    position: relative;
+    width: 100%;
+}
+.messages_service img{
+    width: 100%;
+    display: block;
+}
+
+.messages_service > img{
+    width: 100%;
+    min-height: 1700px;
+    max-height: 1700px;
+    display: block;
+    object-fit: cover;
+}
+
+@media (min-width:1200px) {
+    .messages_service > img{
+        width: 100%;
+        min-height: 1300px;
+        max-height: 1300px;
+        display: block;
+        object-fit: cover;
+    }
+}
+
+.messages_service_content{
+    width: 80%;
+    max-width: 1104px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.moderation_content{
+    margin-top: 110px;
+}
+
+.text_title{
+    font-size: 20px;
+    font-family: 'Inter' , sans-serif;
+    font-weight: 500;
+    display: flex;
+}
+.text_title div{
+    min-width: 16px;
+    max-width: 16px;
+    min-height: 16px;
+    max-height: 16px;
+    margin-right: 15px;
+    background: #0166FF;
+    transform: translateY(25%);
+    border-radius: 50%;
+}
+
+.moderation_txt{
+    margin-top: 30px;
+}
+
+.moderation_txt span{
+    color: #0166FF;
+}
+
+.messages_content_img, .moderation_img{
+    width: 80%;
+    max-width: 599px;
+    box-shadow: -2px 3px 20px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top:40px;
+    margin-bottom: 40px;
+}
+
+.chat_convers{
+    margin-top: 110px;
+    width: 100%;
+    height: 100%;
+}
+
+.chat_convers_txt{
+    margin-top: 30px;
+}
+
+.chat_convers_txt > div{
+    display: flex;
+    margin-top: 20px;
+}
+
+.chat_convers_txt_part div{
+    display: block;
+    min-width: 16px;
+    min-height: 16px;
+    max-width: 16px;
+    max-height: 16px;
+    background: #FA824C;
+    border-radius: 50%;
+    transform: translateY(25%);
+    margin-right: 15px;
+}
+
+@media (min-width:1200px) {
+    .moderation_txt{
+        max-width: 300px;
+    }
+    .moderation_img{
+        float: right;
+        margin-top: -300px;
+    }
+
+    .chat_convers_txt{
+        display: block;
+        width: 412px;
+        float: right;
+    }
+
+    .chat_img{
+        max-width: 500px;
+    }
+}
+@media (min-width:1400px) {
+    .moderation_txt{
+        max-width: 412px;
+    }
+}
+
+/**Section Sport et Overlays*******/
+
+.sport_title{
+    margin-top: 110px;
+}
+
+.orange_row{display: none;}
+
+.sport_overlays_section{
+    width: 80%;
+    max-width: 1104px;
+    margin: 110px auto;
+}
+
+.moderation_tenis_image img{
+    width: 100%;
+}
+
+.overlay_title{
+    font-size: 36px;
+}
+.overlay_title span{
+    font-size: 36px;
+    font-weight: 700;
+    color: #0166FF;
+}
+
+@media (min-width:1200px) {
+    
+    .sport_overlays_section{
+        display: block;
+        width: 80%;
+        max-width: 1104px;
+        margin: 110px auto;
+    }
+    
+    .moderation_tenis_image{
+        display: flex;
+    }
+
+    .moderation_tenis_image > p{
+        display: block;
+        max-width: 400px;
+        margin-right:10px;
+    }
+
+    .moderation_tenis_image img{
+        margin-top: 10px;
+    }
+    
+    .orange_row{
+        display: block;
+        margin-top: -120px;
+        margin-left: -5px;
+    }
+
+    .overlay_title{
+        font-size: 50px;
+        margin-top:0;
+    }
+    .overlay_title span{
+        font-size: 50px;
+    }
+}
+
+.overlay_exemple > img{
+    width: 250px;
+    margin-top: 60px;
+}
+
+.overlay_exemple > div > p span{
+    color: #0166FF;
+}
+
+.overlay_exemple_2{
+    display: block;
+    width: 100%;
+    max-width: 713px;
+    margin-top:40px;
+    border-radius: 10px;
+    box-shadow: -2px 3px 20px 2px rgba(0, 0, 0, 0.25);
+    margin-top: 60px;
+}
+
+@media (min-width:1200px) {
+    .overlay_exemple_2{
+        margin-top: 250px;
+    }
+}
+
+/**Sondage dons et compteur **/
+
+.sondage_title{
+    display: block;
+    width: 80%;
+    max-width: 1104px;
+    text-align: right;
+    margin: 110px auto;
+}
+@media (min-width:1200px) {
+    .sondage_title{margin: 250px auto;}
+}
+
+.sondage{
+    display: block;
+    width: 80%;
+    max-width: 1104px;
+    margin: auto;
+}
+
+.img_sondage_exemple{
+    width: 100%;
+    display: block;
+}
+
+.img_sondage_exemple img{
+    width: 100%;
+    max-width: 400px;
+    margin-left:-20px;
+}
+.img_sondage_exemple h3{
+    font-size: 36px;
+}
+
+.img_sondage_exemple h3 span{
+    font-size: 36px;
+    font-weight: 700;
+    color: #0166FF;
+}
+
+.sondage_txt{
+    max-width: 612px;
+}
+.sondage_txt span{
+    color: #0166FF;
+}
+
+@media (min-width:1200px) {
+    .sondage{
+        margin-top: -100px;
+    }
+
+    .img_sondage_exemple img{
+        max-width: 400px;
+    }
+
+    .img_sondage_exemple h3{
+        max-width: 400px;
+        font-size: 50px;
+        margin-top: 0;
+    }
+    .img_sondage_exemple h3 span{
+        font-size: 50px;
+    }
+
+    .img_sondage_exemple{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/***Sep_bar**/
+
+.sep_bar{
+    width: 80%;
+    max-width: 700px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #0166FF;
+    margin: 110px auto;
+}
+@media (min-width:1200px) {
+    .sep_bar{
+        margin: 220px auto;
+    }
+}
