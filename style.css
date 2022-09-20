@@ -695,8 +695,132 @@ a{text-decoration: none;}
     color: #A2D729;
 }
 
+.tarif_link{
+    display: block;
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    line-height: 2.3em;
+    border: 2px solid #FA824C;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+    color: white;
+    margin: auto;
+}
+.tarif_link:hover{
+    transition: .2s ease-in-out;
+    border:2px solid #0166FF;
+    background: white;
+    color: #342E37;
+}
+
 @media (min-width:1300px) {
     .tarifs_section{
         display: flex;
     }
+}
+
+/**Footer**/
+
+footer{
+    width: 100%;
+    height: 350px;
+    background: #342E37;
+    padding-top: 40px;
+    position: relative;
+    top:110px;
+    bottom: 0;
+}
+.footer_logo{
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: -2px 3px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.social_medias{
+    display: flex;
+    width: 80%;
+    max-width: 400px;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+.social_div{
+    width: 24px;
+    height: 24px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.social_div img{
+    width: 100%;
+    height: 100%;
+}
+
+.social_div:hover{
+    width: 26px;
+    height: 26px;
+    transition: .2s ease-in-out;
+}
+
+.cgu_links{
+    width: 80%;
+    max-width: 650px;
+    display: flex;
+    margin: auto;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+
+.cgu_links > div{
+    width: 2px;
+    height: 30px;
+    background: white;
+}
+
+.cgu_links a{
+    display: flex;
+    color: white;
+    transition: .2s ease-in-out;
+}
+.cgu_links a:hover{
+    color: #A2D729;
+    transition: .2s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+    .cgu_links{
+        width: 80%;
+        max-width: 650px;
+        display: block;
+        margin: auto;
+    }
+    
+    .cgu_links > div{
+        display: none;
+    }
+    
+    .cgu_links a{
+        display: block;
+        color: white;
+        transition: .2s ease-in-out;
+        margin-top:40px;
+    }
+    .cgu_links a:hover{
+        color: #A2D729;
+        transition: .2s ease-in-out;
+    }
+}
+
+.rights_txt{
+    color: #888888;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 40px;
+    width: 80%;
+    max-width: 450px;
+    margin: auto;
 }
