@@ -829,12 +829,12 @@ footer{
 
 .reveal{
     opacity: 0;
-    transform: translateY(-30px);
-    transition: .7s cubic-bezier(.52,1.36,.92,.4);
+    transform: translateX(-180px);
+    transition: .4s ease-in-out;
 }
 
 .reveal_true{
     opacity: 1;
-    transform: translateY(0);
-    transition: .7s cubic-bezier(.52,1.36,.92,.4);
+    transform: translateX(0);
+    transition: .4s ease-in-out;
 }
