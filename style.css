@@ -169,7 +169,7 @@ a{text-decoration: none;}
 }
 .inscription_link:hover{
     transition: .2s ease-in-out;
-    color: #0166FF;
+    color: white;
 }
 
 /****Banner settings**/
@@ -823,4 +823,18 @@ footer{
     width: 80%;
     max-width: 450px;
     margin: auto;
+}
+
+/***Apparition aux défilements***/
+
+.reveal{
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: .7s cubic-bezier(.52,1.36,.92,.4);
+}
+
+.reveal_true{
+    opacity: 1;
+    transform: translateY(0);
+    transition: .7s cubic-bezier(.52,1.36,.92,.4);
 }
